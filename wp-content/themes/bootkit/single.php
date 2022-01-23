@@ -34,6 +34,12 @@ get_header();
                 by
                 <a href="<?php echo $author_URL; ?>"><?php the_author();?></a>
             </p>
+            <!-- Preview Image -->
+            <?php
+if (has_post_thumbnail()) {
+            the_post_thumbnail("full", ["class" => "card-img-top"]);
+        }
+        ?>
         <?php
 }
 }
