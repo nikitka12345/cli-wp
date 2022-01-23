@@ -50,11 +50,27 @@ if (has_post_thumbnail()) {
             'after' => '</div>',
         );
         wp_link_pages($defaults);
+        edit_post_link();
         ?>
             <hr>
         <!-- Tag cloud -->
         <?php the_tags('', ', ');?>
             <hr>
+             <!-- Pagination -->
+             <ul class="pagination justify-content-center mb-4">
+                <li class="page-item">
+                    <?php previous_post_link();?>
+                </li>
+                <li class="page-item">
+                    <?php next_post_link();?>
+                </li>
+            </ul>
+            <?php
+        if (comments_open() || get_comments_number()) {
+            comments_template();
+        }
+?>
+
         <?php
 }
 }
