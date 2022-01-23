@@ -5,7 +5,7 @@
      <h2 class="card-title"><a href="<?php the_permalink()?>"><?php the_title()?></a></h2>
      <p>Post category:<?php the_category(" ")?></p>
      <div class="card-body">
-         <p class="card-text"><?php the_content()?></p>
+         <p class="card-text"><?php the_excerpt()?></p>
          <a href="<?php the_permalink()?>" class="btn btn-primary">Read More &rarr;</a>
      </div>
      <div class="card-footer text-muted">

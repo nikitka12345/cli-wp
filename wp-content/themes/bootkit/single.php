@@ -15,8 +15,16 @@ get_header();
         <?php if (have_posts()) {
     while (have_posts()) {
         the_post();
-        get_template_part('partials/posts/content-excerpt');
+        
         ?>
+         <!-- Title -->
+         <h1 class="mt-4"><?php the_title()?></h1>
+            <!-- Post category: -->
+            <h2 class="mt-4"><?php the_category(" ")?></h2>
+
+            <!-- Date/Time -->
+            <p><?php echo get_the_date() ?></p>
+          
         <?php
 }
 }
