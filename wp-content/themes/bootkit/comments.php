@@ -2,6 +2,9 @@
     return;
 }
 ?>
+<?php
+if (have_comments()) {
+    ?>
  <!-- Comments Form -->
   <div class="card my-4">
                 <h5 class="card-header">Leave a Comment:</h5>
@@ -57,6 +60,7 @@ foreach ($comments as $comment) {
                </div>
                <div class="media-body">
                    <?php comment_text();?>
+                   
                </div>
            </div>
        </div>
@@ -65,3 +69,7 @@ foreach ($comments as $comment) {
 the_comments_pagination();
 ?>
 <!-- .commentlist end -->
+
+<?php
+}
+?>
