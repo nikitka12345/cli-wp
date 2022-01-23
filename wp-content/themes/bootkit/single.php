@@ -15,16 +15,25 @@ get_header();
         <?php if (have_posts()) {
     while (have_posts()) {
         the_post();
-        
+        global $post;
+        $author_ID = $post->post_author;
+        $author_URL = get_author_posts_url($author_ID);
         ?>
          <!-- Title -->
          <h1 class="mt-4"><?php the_title()?></h1>
             <!-- Post category: -->
             <h2 class="mt-4"><?php the_category(" ")?></h2>
 
-            <!-- Date/Time -->
-            <p><?php echo get_the_date() ?></p>
-          
+           <!-- Date/Time -->
+           <p><?php the_time(get_option('date_format'));
+        echo " ";
+        the_time(get_option('time_format'));?></p>
+            <hr>
+          <!-- Author -->
+          <p class="lead">
+                by
+                <a href="<?php echo $author_URL; ?>"><?php the_author();?></a>
+            </p>
         <?php
 }
 }
