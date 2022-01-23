@@ -6,12 +6,33 @@
   <div class="card my-4">
                 <h5 class="card-header">Leave a Comment:</h5>
                 <div class="card-body">
-                    <form>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                <?php comment_form([
+    'comment_field' => '<div class="form-group">
+    <textarea name="comment" cols="58" rows="3" class="form-control"></textarea>
+</div>',
+    'fields' => [
+        'author' =>
+        '<div class="col col-sm-4">
+            <label>' . __('Name', 'bootkit') . '</label>
+            <input type="text" name="author" class="form-control" />
+        </div>',
+        'email' =>
+        '<div class="col col-sm-4">
+            <label>' . __('Email', 'bootkit') . '</label>
+            <input type="text" name="email" class="form-control" />
+        </div>',
+        'url' =>
+        '<div class="col col-sm-4">
+            <label>' . __('Website', 'bootkit') . '</label>
+            <input type="text" name="url" class="form-control" />
+        </div>',
+    ],
+    'class_submit' => 'btn btn-primary',
+    'label_submit' => __('Submit Comment', 'bootkit'),
+    'title_reply' => __('', 'bootkit'),
+]
+);
+?>
                 </div>
             </div>
 
