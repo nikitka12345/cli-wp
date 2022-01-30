@@ -143,6 +143,7 @@ wp_reset_postdata();
 <?php 
 // the_meta();
  ?>
+ <!-- Post meta data: -->
  <h5>Post meta data:</h5>
 <?php
 $arr = get_post_custom();
