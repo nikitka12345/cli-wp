@@ -47,4 +47,13 @@ edit_post_link();
         <?php wp_reset_postdata();?>
     </div>
 </div>
+ <?php   $categories = get_terms('category', 'orderby=name&hide_empty=0');
+      if ($categories) {
+            echo '<ul>';
+            foreach ($categories as $cat) {
+                // term_id - ID рубрики, а $cat->name - название рубрики
+                echo "<li value='{$cat->term_id}'>{$cat->name}</li>";
+          }
+           echo '</ul>';
+        } ?> 
 <?php get_footer();?>
