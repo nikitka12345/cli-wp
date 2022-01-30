@@ -3,8 +3,10 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
-body {
+ body {
   padding-top: 56px;
+  background-color: #DFF3FC; /* Цвет фона веб-страницы */
+   
 }
 
 .carousel-item {
@@ -23,3 +25,13 @@ body {
 .container img {
   max-width: 100% !important ;
 }
+
+/* My own */
+
+ h1 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #030730;
+ } 
+ p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
