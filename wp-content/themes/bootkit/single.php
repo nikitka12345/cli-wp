@@ -141,8 +141,21 @@ wp_reset_postdata();
 </div>
 <!-- /.container -->
 <?php 
-the_meta();
+// the_meta();
  ?>
+ <h5>Post meta data:</h5>
+<?php
+$arr = get_post_custom();
+foreach ($arr as $key => $fields) {
+    if (!is_protected_meta($key, 'post')) {
+        print_r("<strong>{$key}</strong> :");
+        foreach ($fields as $field) {
+            print_r($field . " ");
+        }
+        echo "<br>";
+    }
+}
+?>
 <?php
 
 get_footer();
