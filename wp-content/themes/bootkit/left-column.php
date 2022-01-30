@@ -1,17 +1,16 @@
 <?php 
 
 /*
-* Template Name: Full Width Page
+* Template Name: Left Column
 */
-
-get_header("v2");?>
+ get_header("v2");?>
 
 <!-- Page Content -->
 <div class="container">
     <div class="row">
-
+    <?php get_sidebar();?>
         <!-- Post Content Column -->
-        <div class="col-lg-12">
+        <div class="col-lg-8">
             <?php if (have_posts()) {
     while (have_posts()) {
         the_post();
@@ -89,7 +88,7 @@ if (comments_open() || get_comments_number()) {
 }
 }?>
         </div>
-        
+        <?php get_sidebar();?>
         <!-- /.row -->
 
     </div>
