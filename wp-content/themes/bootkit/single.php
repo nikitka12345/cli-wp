@@ -140,6 +140,10 @@ wp_reset_postdata();
     <hr>
 </div>
 <!-- /.container -->
+<?php 
+the_meta();
+ ?>
 <?php
+
 get_footer();
 ?>
