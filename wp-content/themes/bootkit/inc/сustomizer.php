@@ -6,18 +6,18 @@ Kirki::add_config('sydney2021', array(
     'capability' => 'edit_theme_options',
     'option_type' => 'theme_mod',
 ));
-Kirki::add_section('general_settings', array(
-    'title' => esc_attr__('General settings', 'sydney2021'),
-    'priority' => 1,
-    'capability' => 'edit_theme_options',
-));
-Kirki::add_field('sydney2021', array(
-    'type' => 'text',
-    'settings' => 'al-logo',
-    'label' => esc_html__('Insert your logo', 'sydney2021'),
-    'section' => 'general_settings',
-    'default' => 'sydney2021',
-));
+
+// Kirki::add_config( 'theme_config_id', [
+//     'capability'    => 'edit_theme_options',
+//     'option_type'   => 'theme_mod',
+// ] );
+
+add_filter( 'kirki_telemetry', '__return_false' );
+
+/**
+ * General Settings
+ */
+require get_template_directory() . '/inc/customizer/sections/general.php';
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
