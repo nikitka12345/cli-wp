@@ -14,6 +14,7 @@ include get_theme_file_path('includes/theme-customizer.php');
 include get_theme_file_path('includes/customizer/social.php');
 include get_theme_file_path('includes/customizer/misc.php');
 include get_template_directory() . '/inc/сustomizer.php';
+
 // Hooks
 add_action('wp_enqueue_scripts', 'bootkit_enqueue');
 add_action('after_setup_theme', 'bootkit_setup_theme');

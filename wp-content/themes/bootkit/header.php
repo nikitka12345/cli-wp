@@ -42,7 +42,11 @@ if (has_nav_menu('primary')) {
 ?>
             </div>
         </div>
-
+        <?php $text_value = get_theme_mod('al-logo', 'DEFAULT VALUE');?>
+    <div class="kirki"
+        style="font-weight:bold;  border: 10px #DFF3FC solid; padding: 10px; border-radius:50%; display:inline-block;">
+        <?php echo $text_value; ?>
+     </div>
     </nav>
     
     <?php if (is_front_page()) {?>
