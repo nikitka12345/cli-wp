@@ -17,6 +17,21 @@ function bootkit_social_customizer_section($wp_customize)
             'settings' => 'bootkit_facebook_handle',
         )
     ));
+
+    $wp_customize->add_setting('bootkit_instagram_handle', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'bootkit_social_instagram_input',
+        array(
+            'label' => __('Instagram', 'bootkit'),
+            'section' => 'bootkit_social_section',
+            'settings' => 'bootkit_instagram_handle',
+            'type' => 'text',
+        )
+    ));
+
     $wp_customize->add_setting('bootkit_email', array(
         'default' => '',
     ));
