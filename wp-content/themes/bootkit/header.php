@@ -59,6 +59,17 @@ if (get_theme_mod('bootkit_facebook_handle')) {
                 </li>
 <?php
 }
+if (get_theme_mod('bootkit_email')) {
+    ?><li><a href="mailto:<?php echo get_theme_mod('bootkit_email'); ?>">
+         <i  class="fa fa-envelope"></i><?php echo get_theme_mod('bootkit_email'); ?></a></li>
+<?php
+}
+if (get_theme_mod('bootkit_phone_number')) {
+    ?><li><a href="tel:+<?php echo get_theme_mod('bootkit_phone_number'); ?>">
+<i class="fa fa-phone"></i>+<?php echo get_theme_mod('bootkit_phone_number'); ?></a></li>
+<?php
+}
+?>
 ?>
 
             </ul>
