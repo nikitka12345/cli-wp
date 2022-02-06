@@ -70,7 +70,7 @@ if (get_theme_mod('bootkit_phone_number')) {
 <?php
 }
 ?>
-?>
+
 
             </ul>
         </div><!-- #top-social end -->
