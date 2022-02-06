@@ -14,7 +14,7 @@ function bootkit_register_post_type_init()
         'not_found' => 'Movies not found.',
         'not_found_in_trash' => 'Movies not found in trash.',
         'menu_name' => 'Movies',
-    );
+    );                                                                                                                                                                                                                                                                       
     $args = array(
         'labels' => $labels,
         'public' => true, //for all users - true
@@ -25,7 +25,7 @@ function bootkit_register_post_type_init()
         'show_in_nav_menus' => true,
         'show_in_admin_bar' => true,
         'menu_position' => 20,
-        'supports' => array('title', 'editor', 'comments', 'author', 'thumbnail'),
+        'supports' => array('title', 'editor', 'comments', 'author', 'thumbnail', 'revisions', 'custom-fields'),
         'taxonomies' => array('category', 'genre', 'director'),
     );
     register_post_type('movies', $args);
