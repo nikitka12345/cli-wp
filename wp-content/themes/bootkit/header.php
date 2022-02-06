@@ -44,20 +44,7 @@ if (has_nav_menu('primary')) {
         </div>
 
     </nav>
-    <div class="container">
-        <?php if (get_theme_mod('bootkit_header_show_search')) {?>
-        <!-- Top Search  ============================ -->
-        <div class="col-md-4 mt-4 mb-2 pl-0">
-            <form id="searchform" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-                <div class="input-group">
-                    <input type="text" class="search-field form-control" name="s" placeholder="Search"
-                        value="<?php echo get_search_query(); ?>">
-                    <button type="submit" class="btn btn-secondary"><i class="fa fa-search"></i></button>
-                </div>
-            </form>
-        </div><!-- #top-search end -->
-        <?php }?>
-    </div>
+    
     <?php if (is_front_page()) {?>
     <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -103,3 +90,17 @@ if (has_nav_menu('primary')) {
         </div>
     </header>
     <?php }?>
+    <div class="container">
+        <?php if (get_theme_mod('bootkit_header_show_search')) {?>
+        <!-- Top Search  ============================ -->
+        <div class="col-md-4 mt-4 mb-2 pl-0">
+            <form id="searchform" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+                <div class="input-group">
+                    <input type="text" class="search-field form-control" name="s" placeholder="Search"
+                        value="<?php echo get_search_query(); ?>">
+                    <button type="submit" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div><!-- #top-search end -->
+        <?php }?>
+    </div>
