@@ -52,6 +52,12 @@ if (get_theme_mod('bootkit_facebook_handle')) {
                         <i class="fa fa-facebook"></i></a>
                 </li>
                 <?php
+}if (get_theme_mod('bootkit_instagram_handle')) {
+    ?>
+                <li><a href="<?php echo get_theme_mod('bootkit_instagram_handle'); ?>" target="_blank">
+                    <i class="fa fa-instagram"></i></a>
+                </li>
+<?php
 }
 ?>
 
