@@ -1,3 +1,10 @@
+(function ($, undefined) {
+  jQuery(function () {
+    /*activeSlider();
+   buttonUp();*/
+    leftMenu();
+    searchLine();
+  });
 jQuery(function() {
    /*activeSlider();
    buttonUp();*/
@@ -128,3 +135,4 @@ function searchLine() {
     $(".inputSearch").focus();
   });  
 }
+})(jQuery);
