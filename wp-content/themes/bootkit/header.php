@@ -42,13 +42,15 @@ if (has_nav_menu('primary')) {
 ?>
             </div>
         </div>
-        <?php $text_value = get_theme_mod('al-logo', 'DEFAULT VALUE');?>
-    <div class="kirki"
-        style="font-weight:bold;  border: 10px #DFF3FC solid; padding: 10px; border-radius:50%; display:inline-block;">
-        <?php echo $text_value; ?>
-     </div>
+        <?php $text_value = get_theme_mod('al-logo', 'logo');?>
+        <div class="kirki"
+            style="font-weight:bold; border: 3px gray solid; padding: 5px; border-radius:5px; display:inline-block; ">
+            <?php echo $text_value; ?>
+        </div>
+
     </nav>
-    
+
+
     <?php if (is_front_page()) {?>
     <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -94,6 +96,7 @@ if (has_nav_menu('primary')) {
         </div>
     </header>
     <?php }?>
+
     <div class="container">
         <?php if (get_theme_mod('bootkit_header_show_search')) {?>
         <!-- Top Search  ============================ -->
