@@ -6,9 +6,9 @@
  *
  * @package Sydney_2021
  */
- 
+
 ?>
- 
+
 <div class="articleSpace">
     <div class="imgBlock">
         <?php sydney_2021_post_thumbnail();?>
@@ -16,7 +16,7 @@
     <div class="contentText">
         <h5 class="titleArticle"><?php the_title();?></h5>
         <?php
- 
+
 the_content(
     sprintf(
         ('MORE INFO'),
@@ -26,7 +26,7 @@ the_content(
             ),
         )
     )
- 
+
 );
 ?>
         <p> <a href="#" class="bookNow">BOOK NOW</a></p>

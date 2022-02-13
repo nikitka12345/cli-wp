@@ -8,9 +8,9 @@
  *
  * @package Sydney_2021
  */
- 
+
 ?>
- 
+
 <footer>
     <h4 class="tittleBlock text-center">our partners.</h4>
     <div class="owl-carousel owl-theme logoList actSliderFooter">
@@ -43,18 +43,18 @@
                     class="logo7"></a>
         </div>
     </div>
- 
+
     <div class="back-to-top">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/upArroy.png" alt="up">
     </div>
- 
+
     <p class="textFooter text-center">SYDNEY PHILHARMONIA CHOIRS</p>
     <p class="textFooter text-center">Pier 4, Hickson Road Walsh Bay NSW 2000</p>
     <p class="textFooter text-center">Phone:<a href="tel:0282746200" class="footerLinkNum"> 02 8274 6200</a></p>
     <a href="mailto:admin@sydneyphilharmonia.com.au" class="text-center footerLink">admin@sydneyphilharmonia.com.au</a>
     <a href="sydneyphilharmonia.com.au" class="text-center footerLink">sydneyphilharmonia.com.au </a>
     <a href="singwithpassion.com.au" class="text-center footerLink">singwithpassion.com.au </a>
- 
+
     <ul class="footerListSoc">
         <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fb.png" alt="facebook"></a>
         </li>
@@ -67,7 +67,7 @@
         <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/search.png"
                     alt="search"></a></li>
     </ul>
- 
+
     <p class="textFooter text-center">
         <?php
 /* translators: 1: Theme name, 2: Theme author. */
@@ -76,9 +76,9 @@ printf(esc_html__('Theme: %1$s by %2$s.', 'sydney-2021'), 'sydney-2021', '<a hre
     </p>
 </footer>
 
-
 </div><!-- #page -->
 <?php wp_footer();?>
- 
+
 </body>
+
 </html>

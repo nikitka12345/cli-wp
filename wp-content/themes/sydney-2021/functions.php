@@ -214,3 +214,7 @@ require get_template_directory() . '/tgm/init-tgm.php';
  * Include Walker_Nav_Menu.
  */
 include get_theme_file_path('includes/custom-nav-walker.php');
+/**
+ * Include Kirki сustomizer.
+ */
+require get_template_directory() . '/inc/сustomizer-kirki.php';
